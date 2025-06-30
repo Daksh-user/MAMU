@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design with Animations</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        /* Yo Text Styling */
+        .message {
+            font-size: 60px;
+            color: #4CAF50;
+            animation: fadeIn 2s ease-out;
+            margin-bottom: 20px;
+        }
+
+        /* Link Styling */
+        .link-container {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .link-container a {
+            font-size: 20px;
+            text-decoration: none;
+            color: #1E90FF;
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .link-container a:hover {
+            color: #FF6347;
+        }
+
+        /* Arrow Animation */
+        .arrow {
+            position: absolute;
+            top: 50%;
+            right: -30px;
+            font-size: 30px;
+            color: #1E90FF;
+            animation: bounce 1s infinite;
+        }
+
+        /* Animation for fading in Yo */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Animation for bouncing arrow */
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        /* Movie in Vegas Styling */
+        .footer {
+            font-size: 24px;
+            color: #8A2BE2;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="message">Yo</div>
+    
+    <div class="link-container">
+        <a href="https://github.com/Daksh-user/daksh.git" target="_blank">Check the GitHub Repo</a>
+        <span class="arrow">➔</span>
+    </div>
+    
+    <div class="footer">movie in vegas</div>
+
+</body>
+</html>
